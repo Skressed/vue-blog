@@ -169,6 +169,10 @@ p {
     height: 8em;
   }
 
+  .post-title {
+    max-width: 260px;
+  }
+
   .post-caption {
     max-width: 260px;
   }
