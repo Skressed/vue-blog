@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <pgheader></pgheader>
+    <modals v-bind:posts="cards"></modals>
+    <cards v-bind:posts="cards"></cards>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pgheader from './components/Pgheader.vue'
+import Cards from './components/Cards.vue'
+import Modals from './components/Modals.vue'
+import mockedData from './fixtures/mockData.json'
+import { bus } from './main'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Pgheader,
+    Cards,
+    Modals
+  },
+  data () {
+    return {
+      defaultCards: mockedData,
+      cards: [],
+    }
+  },
+  created () {
+    bus.$on('loadData', () => {
+      this.cards = this.pickLocalStorageData();
+    });
+    this.cards = this.pickLocalStorageData();
+
+  },
+  methods: {
+    pickLocalStorageData: function() {
+      const lsCards = window.localStorage.getItem('cards');
+      if(!lsCards){
+        window.localStorage.setItem('cards', JSON.stringify(this.defaultCards));
+        return this.defaultCards;
+      }
+      return JSON.parse(lsCards);
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "title": "This Week's Top Stories About blablablablabla",
+    "caption": "This week has been filled with a lot of things happening we think are important. This is an article about them.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "AiwvnE3-_RZZLRElOXSys",
+        "text": "Wow this is really deep! Made me rethink my whole existence 10/10 would read again"
+      },
+      {
+        "author": "Darth Maul",
+        "commentid": "AubZ5DOvkgixenRl4Jf9A",
+        "text": " In a galaxy at war, Savage, there is only one way to get the attention of the Jedi. Slaughter of the innocent. Mercilessly and without compromise. Nice post though."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Can you come up with an article name?",
+    "caption": "Some cool caption here and it should be long long long long long long long long long or maybe no.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "VfxqRyZNHfCxgrzwAzkdf",
+        "text": "This is not good Chief."
+      },
+      {
+        "author": "Darth Maul",
+        "commentid": "jDR3OyJiHdiRPnq7zEQmA",
+        "text": "Im Darth Maul lol."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "This is a really nice article please read it",
+    "caption": "Pretty short caption",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "IM6UtPuBIsTmxGhonAIC2",
+        "text": "Wow thats a lot of text man."
+      },
+      {
+        "author": "Anonymous",
+        "commentid": "fUztwpbpiYhh9IY3ytkny",
+        "text": "I enjoyed this one a lot."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "This Week's Top Stories About blablablablabla",
+    "caption": "This week has been filled with a lot of things happening we think are important. This is an article about them.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "eS7aPdTbIUOXAH-OuqXAu",
+        "text": "Wow this is really deep! Made me rethink my whole existence 10/10 would read again"
+      },
+      {
+        "author": "Darth Maul",
+        "commentid": "4H2DAN50NIJXVOVzVnbUZ",
+        "text": " In a galaxy at war, Savage, there is only one way to get the attention of the Jedi. Slaughter of the innocent. Mercilessly and without compromise. Nice post though."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Can you come up with an article name?",
+    "caption": "Some cool caption here and it should be long long long long long long long long long or maybe no.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "Byz7-yrZheMg8ACx02xdy",
+        "text": "This is not good Chief."
+      },
+      {
+        "author": "Darth Maul",
+        "commentid": "2qp8_OdpUupCtJYh8YgSJ",
+        "text": "Im Darth Maul lol."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "This is a really nice article please read it",
+    "caption": "Pretty short caption",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "comments":
+    [
+      {
+        "author": "Mr. Niceguy",
+        "commentid": "ulxcjLZy7N_taOEMbV53-",
+        "text": "Wow thats a lot of text man."
+      },
+      {
+        "author": "Anonymous",
+        "commentid": "sxvJiz0Ngkch1orvL9r6w",
+        "text": "I enjoyed this one a lot."
+      }
+    ]
+  }
+]
