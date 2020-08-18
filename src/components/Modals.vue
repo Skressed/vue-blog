@@ -190,6 +190,7 @@ export default {
   box-shadow: 0;
   border-radius: 12px;
   color: black;
+  margin-right: 4px;
 }
 
 .comments-wrapper {

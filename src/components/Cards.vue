@@ -4,10 +4,10 @@
       <div @click="openPost(post.id)" class="post" v-for="post in posts" v-bind:key="post.id">
         <div class="post-header">
           <p class="post-title">{{ post.title }}</p>
-          <p class="post-comments-count">{{ post.comments.length }} comments</p> <!--smth like that-->
-        </div>
-        <div class="post-preview">
           <p class="post-caption">{{ post.caption }}</p>
+        </div>
+        <div class="post-footer">
+          <p class="post-comments-count">{{ post.comments.length }} comments</p>
         </div>
       </div>
     </div>
@@ -57,6 +57,7 @@ p {
   border: 1px solid black;
   margin: 16px;
   padding: 24px;
+  padding-bottom: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,15 +84,27 @@ p {
 .post-title {
   font-size: 24px;
   margin-bottom: 4px;
-  height: 5em;
+  height: 3em;
   transition: 0.3s;
   text-align: center;
+}
+
+.post-caption {
+  overflow-wrap: break-word;
+}
+
+.post-footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .post-comments-count {
   font-size: 16px;
   opacity: 0.6;
-  margin-bottom: 16px;
   transition: 0.3s;
   height: 3em;
 }
@@ -110,7 +123,7 @@ p {
   }
 
   .post {
-    min-height: 240px;
+    min-height: 170px;
     padding: 16px;
   }
 }
@@ -122,7 +135,7 @@ p {
   }
 
   .post {
-    min-height: 360px;
+    min-height: 160px;
   }
 
   .post-header {
@@ -131,19 +144,37 @@ p {
 
   .post-title {
     font-size: 20px;
-    height: 7em;
+    height: 5em;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-
+  .grid {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: auto;
+  }
   .post {
-    min-height: 120px;
+    min-height: 240px;
+    max-width: 260px;
   }
 
   .post-header {
     height: 8em;
+  }
+
+  .post-caption {
+    max-width: 260px;
+  }
+
+  .post-footer{
+    margin-top: 48px;
   }
 }
 </style>
