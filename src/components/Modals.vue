@@ -21,9 +21,12 @@
           <b-button @click="deleteThePost(post.id)" variant="danger" class="newcomment">
             Delete this post
           </b-button>
-          <div class="comment" @click="dropComment(comment.commentid)" v-for="comment in post.comments" v-bind:key="comment.commentid">
-            <p class="comment-author">{{comment.author}}</p>
-            <p class="comment-text">{{comment.text}}</p>
+          <div class="comment" v-for="comment in post.comments" v-bind:key="comment.commentid">
+            <div class="comment-content">
+              <p class="comment-author">{{comment.author}}</p>
+              <p class="comment-text">{{comment.text}}</p>
+            </div>
+            <b-button @click="dropComment(comment.commentid)" class="deletebtn" variant="outline-danger">Delete</b-button>
           </div>
         </div>
       </template>
@@ -99,13 +102,13 @@ export default {
           return obj.commentid !== commentid;
         });
         this.post.comments = array;
-        this.updateData();
     },
     resetModal: function() {
       this.titleEdit = false,
       this.textEdit = false,
       this.titlePlaceholder = '',
       this.textPlaceholder = ''
+      this.updateData();
     },
     newComment: function() {
       this.$bvModal.show('modal-newcomment');
@@ -140,6 +143,7 @@ export default {
     updateData: function() {
       window.localStorage.setItem('cards', JSON.stringify(this.posts));
       bus.$emit('loadData');
+
     }
   }
 }
@@ -203,10 +207,40 @@ export default {
   transition: 0.3s;
   border: 1px solid rgba(0,0,0,0.09);
   margin: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
 }
 
 .comment:hover {
   transition: 0.3s;
-  background-color: rgba(255,0,0,0.12);
+  background-color: rgba(0,0,0,0.12);
+}
+
+.deletebtn {
+  height: 4em;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-text {
+  max-width: 40em;
+}
+
+@media screen and (max-width: 1000px) {
+  .comment-author, .comment-text {
+    max-width: 20em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .comment-author, .comment-text {
+    max-width: 15em;
+  }
 }
 </style>
